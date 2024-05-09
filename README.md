@@ -231,6 +231,8 @@ hourly_steps<- hourly_step %>%
 ```{r}
 head(hourly_steps)
 ```
+![datetime change](https://github.com/Anabella1/Capstone-Project/assets/119600515/12fbcd97-18e5-4eae-9f14-ea6927d2ac57)
+
 
 - Visualization of the hourly steps throughout the day.
 

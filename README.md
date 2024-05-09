@@ -208,6 +208,7 @@ hourly_step <- read.csv("hourlyStepmergedd.csv")
   head(hourly_step)
 ```
 
+![hourly step loading](https://github.com/Anabella1/Capstone-Project/assets/119600515/16438799-fd07-4471-ba3e-e948e62d7a75)
 
 ```{r}
 hourly_steps<- hourly_step %>% 

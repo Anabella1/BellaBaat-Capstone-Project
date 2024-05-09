@@ -75,6 +75,7 @@ hourly_steps <- read.csv("hourlySteps_merged.csv")
 hourly_calories <- read.csv("hourlyCalories_merged.csv")
 hourly_intensities <- read.csv("hourlyIntensities_merged.csv")
 ```
+![loading dataset](https://github.com/Anabella1/Capstone-Project/assets/119600515/83a0b555-2b15-4f0f-a65b-c592901e0892)
 
 
 -  Previewing the dataset using head() to view the first 6 rows and tail() to view the last 6 rows

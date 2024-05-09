@@ -125,6 +125,8 @@ nrow(hourly_steps)
 nrow(hourly_calories)
 nrow(hourly_intensities)
 ```
+![nrows](https://github.com/Anabella1/Capstone-Project/assets/119600515/d5c8d46a-23d6-48da-afa9-04144ccc634a)
+
 
 ## Analyse and Share Phase
 

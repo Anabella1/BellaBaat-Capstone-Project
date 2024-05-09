@@ -90,6 +90,8 @@ tail(hourly_calories)
 tail(hourly_intensities)
 ```
 
+![head and tail preview](https://github.com/Anabella1/Capstone-Project/assets/119600515/cbd9cd9c-b260-4929-b1d0-a72264c29f9f)
+
 -  To return the name of the columnns on each data fram i will use colnames() function
 
 ```{r}

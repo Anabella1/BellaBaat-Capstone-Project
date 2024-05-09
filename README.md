@@ -141,6 +141,7 @@ activity_daily %>%
 
 ```
 
+![daily_activity Summary](https://github.com/Anabella1/Capstone-Project/assets/119600515/745374d7-8582-4483-b898-3615a2243be1)
 
 -  Relationship between Steps Taken and Sedentary Minutes
 

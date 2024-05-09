@@ -114,6 +114,9 @@ n_unique(hourly_intensities$Id)
 
 ```
 
+![unique ids](https://github.com/Anabella1/Capstone-Project/assets/119600515/ecf3db23-a323-4b67-90bf-10b9e6826a2c)
+
+
 -  I will be using nrow() to check the number of observation each dataframe has
 
 ```{r}

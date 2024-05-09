@@ -101,6 +101,8 @@ colnames(hourly_calories)
 colnames(hourly_intensities)
 ```
 
+![columnnames](https://github.com/Anabella1/Capstone-Project/assets/119600515/4a0b60e6-75a4-416d-ab0d-0e85d81ae820)
+
 
 -  To check for the number of participant in each datset using n_unique() function
 

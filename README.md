@@ -203,6 +203,22 @@ The hourly intensity was run on excel, I splitted the time from date, then creat
 
 - Daily hourly steps reloading and renaming from ActivityHour to date_time
 
+
+
+
+![image](https://github.com/Anabella1/Capstone-Project/assets/119600515/2a94eead-4087-40a6-8907-d943d8048fe7)
+
+
+
+
+
+
+
+
+
+
+
+
 ```{r}
 hourly_step <- read.csv("hourlyStepmergedd.csv")
   head(hourly_step)

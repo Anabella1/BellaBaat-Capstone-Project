@@ -151,7 +151,7 @@ activity_daily %>%
 
 
 
--  Relationship between Steps Taken and Sedentary Minutes
+##### Relationship between Steps Taken and Sedentary Minutes
 
 ```{r}
 ggplot(data=activity_daily, aes(x=TotalSteps, y=SedentaryMinutes)) + geom_point() + geom_smooth(formula = y ~ x, method = "loess") + labs(title ="Total Steps vs. Sedentary Minutes")
@@ -167,13 +167,14 @@ ggplot(data=activity_daily, aes(x=TotalSteps, y=SedentaryMinutes)) + geom_point(
 
 
 
--  Relationship between Steps Taken and calories burnt
+##### Relationship between Steps Taken and calories burnt
 
 ```{r}
 ggplot(data=activity_daily, aes(x=TotalSteps, y=Calories)) + geom_point() + geom_smooth(formula = y ~ x, method = "loess") + labs(title ="Total Steps VS Calories")
 ```
 
- -  Very Active Minutes Vs Calories
+
+ ##### Very Active Minutes Vs Calories
 
 ```{r}
 ggplot(data = activity_daily, aes(x = VeryActiveMinutes, y = Calories)) + 
@@ -184,7 +185,7 @@ ggplot(data = activity_daily, aes(x = VeryActiveMinutes, y = Calories)) +
        y = "Calories") 
 ```
 
--  Checking Steps taken daily by day of the Week
+#####  Checking Steps taken daily by day of the Week
 This is to know what week has the most active users.
 
 ```{r}

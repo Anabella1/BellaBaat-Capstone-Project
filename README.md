@@ -200,12 +200,6 @@ The hourly intensity was run on excel, I splitted the time from date, then creat
 - People are more active between 6am and 8pm.
 - 5pm - 7pm has the highest movement, it can be deduced that people are more active around that time, it can be said that when people are done with work for the day they move to the gym or take a walk instead of driving or taking taxi.
 
-
-- Daily hourly steps reloading and renaming from ActivityHour to date_time
-
-
-
-
 ![image](https://github.com/Anabella1/Capstone-Project/assets/119600515/2a94eead-4087-40a6-8907-d943d8048fe7)
 
 
@@ -215,9 +209,7 @@ The hourly intensity was run on excel, I splitted the time from date, then creat
 
 
 
-
-
-
+- Daily hourly steps reloading and renaming from ActivityHour to date_time
 
 ```{r}
 hourly_step <- read.csv("hourlyStepmergedd.csv")

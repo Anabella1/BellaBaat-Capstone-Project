@@ -78,6 +78,7 @@ hourly_intensities <- read.csv("hourlyIntensities_merged.csv")
 ![loading dataset](https://github.com/Anabella1/Capstone-Project/assets/119600515/83a0b555-2b15-4f0f-a65b-c592901e0892)
 
 
+
 -  Previewing the dataset using head() to view the first 6 rows and tail() to view the last 6 rows
 ```{r}
 head(activity_daily)
@@ -89,8 +90,9 @@ tail(hourly_steps)
 tail(hourly_calories)
 tail(hourly_intensities)
 ```
-
 ![head and tail preview](https://github.com/Anabella1/Capstone-Project/assets/119600515/cbd9cd9c-b260-4929-b1d0-a72264c29f9f)
+
+
 
 -  To return the name of the columnns on each data fram i will use colnames() function
 
@@ -100,8 +102,8 @@ colnames(hourly_steps)
 colnames(hourly_calories)
 colnames(hourly_intensities)
 ```
-
 ![columnnames](https://github.com/Anabella1/Capstone-Project/assets/119600515/4a0b60e6-75a4-416d-ab0d-0e85d81ae820)
+
 
 
 -  To check for the number of participant in each datset using n_unique() function
@@ -117,6 +119,7 @@ n_unique(hourly_intensities$Id)
 ![unique ids](https://github.com/Anabella1/Capstone-Project/assets/119600515/ecf3db23-a323-4b67-90bf-10b9e6826a2c)
 
 
+
 -  I will be using nrow() to check the number of observation each dataframe has
 
 ```{r}
@@ -126,6 +129,7 @@ nrow(hourly_calories)
 nrow(hourly_intensities)
 ```
 ![nrows](https://github.com/Anabella1/Capstone-Project/assets/119600515/d5c8d46a-23d6-48da-afa9-04144ccc634a)
+
 
 
 ## Analyse and Share Phase
@@ -149,8 +153,6 @@ activity_daily %>%
 - 91 calories is burnt per hour.
 
 
-
-
 ##### Relationship between Steps Taken and Sedentary Minutes
 
 ```{r}
@@ -165,13 +167,16 @@ ggplot(data=activity_daily, aes(x=TotalSteps, y=SedentaryMinutes)) + geom_point(
 
 
 
-
-
 ##### Relationship between Steps Taken and calories burnt
 
 ```{r}
 ggplot(data=activity_daily, aes(x=TotalSteps, y=Calories)) + geom_point() + geom_smooth(formula = y ~ x, method = "loess") + labs(title ="Total Steps VS Calories")
 ```
+
+![Total Steps vs Calories](https://github.com/Anabella1/Capstone-Project/assets/119600515/95249809-baad-4490-a9d2-f2524ba80bd9)
+
+There is a positive corellation between steps taken and calories burnt. 
+
 
 
  ##### Very Active Minutes Vs Calories
@@ -184,6 +189,10 @@ ggplot(data = activity_daily, aes(x = VeryActiveMinutes, y = Calories)) +
        x = "Very Active Minutes", 
        y = "Calories") 
 ```
+
+![Very Active Minutes vs Calories](https://github.com/Anabella1/Capstone-Project/assets/119600515/6fe03d7b-e35e-42c9-bdf0-1cafb5f2277c)
+
+
 
 #####  Checking Steps taken daily by day of the Week
 This is to know what week has the most active users.
@@ -210,29 +219,29 @@ table1 %>%
   
 ```
 
+![Total Steps Per Weekdays](https://github.com/Anabella1/Capstone-Project/assets/119600515/7136d2c0-732b-446d-bb90-b09b595cbc35)
+
+- Wednesday has the highest average total steps taken in the week days while Tuesday has the lowest.
 
 
-- Hourly Intensities daily. 
+  
+ ##### Hourly Intensities daily. 
 The hourly intensity was run on excel, I splitted the time from date, then created a pivot table with time and total intensity, I summarised the value of the total intensity by Average and went ahead to create a pivot chart. From my findings from the chart revealed that:
 
-- People are more active between 6am and 8pm.
-- 5pm - 7pm has the highest movement, it can be deduced that people are more active around that time, it can be said that when people are done with work for the day they move to the gym or take a walk instead of driving or taking taxi.
 
 ![image](https://github.com/Anabella1/Capstone-Project/assets/119600515/2a94eead-4087-40a6-8907-d943d8048fe7)
 
 
-
-!Average Total Intensity vs. Time
+##### Average Total Intensity vs. Time
 
 ![Image 10-05-2024 at 04 31](https://github.com/Anabella1/Capstone-Project/assets/119600515/86d573dd-fde0-43a8-8250-7a5a7a7edf00)
 
+- People are more active between 6am and 7pm.
+- 5pm - 7pm has the highest movement, it can be deduced that people are more active around that time, it can be said that when people are done with work for the day they take a walk instead of driving or taking taxi.
 
 
 
-
-
-
-- Daily hourly steps reloading and renaming from ActivityHour to date_time
+##### Daily hourly steps reloading and renaming from ActivityHour to date_time
 
 ```{r}
 hourly_step <- read.csv("hourlyStepmergedd.csv")
@@ -265,7 +274,7 @@ head(hourly_steps)
 ![datetime change](https://github.com/Anabella1/Capstone-Project/assets/119600515/12fbcd97-18e5-4eae-9f14-ea6927d2ac57)
 
 
-- Visualization of the hourly steps throughout the day.
+###### Visualization of the hourly steps throughout the day.
 
 ```{r}
  hourly_steps %>%
@@ -280,6 +289,11 @@ head(hourly_steps)
   
  
 ```
+
+![Hourly Steps Per Day](https://github.com/Anabella1/Capstone-Project/assets/119600515/21995043-ebd9-447c-bdc7-c8f9daf89aeb)
+
+- It shows that people are more active from 8am to 7pm, they were more steps between 12pm - 2pm and 5pm - 7pm respectively.
+- the time more steps are recorded suggests that they have their lunch break (12pm-2pm) and close for the day (5pm-7pm) during those period assuming the respondents are working class.
 
 
 

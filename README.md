@@ -143,12 +143,29 @@ activity_daily %>%
 
 ![daily_activity Summary](https://github.com/Anabella1/Capstone-Project/assets/119600515/745374d7-8582-4483-b898-3615a2243be1)
 
+### Explaining the summary
+- The average steps taken is 6547 the recommended amount of steps to be taking per day is 10,000 steps, therefore, more steps should be taken for a healthy living.
+- The average sedentary/inactive minute is 995.3(~16 hours) more steps should be taken and inactive minutes should be increased.
+- 91 calories is burnt per hour.
+
+
+
+
 -  Relationship between Steps Taken and Sedentary Minutes
 
 ```{r}
 ggplot(data=activity_daily, aes(x=TotalSteps, y=SedentaryMinutes)) + geom_point() + geom_smooth(formula = y ~ x, method = "loess") + labs(title ="Total Steps vs. Sedentary Minutes")
 
 ```
+
+![Total Steps Vs Sedentary minutes](https://github.com/Anabella1/Capstone-Project/assets/119600515/e1503434-1de2-479e-87fa-0f210567dd82)
+
+- The lower the steps taken by customers the higher the sedentary minutes and the more steps taken the lower the sedentary minutes. When customers take more steps the hours of inactivity is bound to reduce.
+-  Therefore, I recommend customers take more steps, experts have warned that sitting for long hours is unhealthy.
+
+
+
+
 
 -  Relationship between Steps Taken and calories burnt
 
@@ -202,6 +219,11 @@ The hourly intensity was run on excel, I splitted the time from date, then creat
 
 ![image](https://github.com/Anabella1/Capstone-Project/assets/119600515/2a94eead-4087-40a6-8907-d943d8048fe7)
 
+
+
+!Average Total Intensity vs. Time
+
+![Image 10-05-2024 at 04 31](https://github.com/Anabella1/Capstone-Project/assets/119600515/86d573dd-fde0-43a8-8250-7a5a7a7edf00)
 
 
 
